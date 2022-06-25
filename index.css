@@ -129,3 +129,13 @@ p {
   display:inline-block;
   padding:15px;
 }
+
+footer {
+  width: 100%;
+  padding:1em;
+  margin-top:100em;
+  position:top;
+  text-align: center;
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
