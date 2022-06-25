@@ -1,38 +1,143 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Portfolio - Shyro</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="design" href="design.css">
-    </head>
-    <!---ENCABEZADO-->
-        <section class="header">
-            <h1>iShyro's</h1>
-            <p>Private website about me</p>
-            <img src="pregunta.png" href="#" class="inline-block" width="80px">
-            <img src="email.png" href="#" class="inline-block" width="80px">
-        </section>
-    <!---ENCABEZADO-->
-    <body>
-    <!---MENU PRINCIPAL-->
-        <section class="menu">
-            <ul>
-                <li style="--i:5;"><a href="index.html">Home</a></li>
-                <li style="--i:3;"><a href="#">Portfolio</a></li>
-                <li style="--i:2;"><a href="#">Calculator</a></li>
-            </ul>
-        </section>
-        <section>
-            <ul class="contenedor">
-            </ul>
-        </section>
-    <!---MENU PRINCIPAL-->
-    </body>
-    <!---PIE DE PAGINA--->
-    <footer>
-        Copyright reserved &copy; 2022<br>
-        Design by iShyro <br>
-    </footer>
-    <!---PIE DE PAGINA--->
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300&display=swap');
+*
+{
+  margin:0;
+  padding:0;
+  right: 10em;
+  box-sizing:border-box;
+  font-family:'Yanone Kaffeesatz', sans-serif; /*Tipografia*/
+}
+body
+{
+  justify-content:center;
+  background: #434750; /*Color del fondo*/
+}
+ul li
+{
+  position:relative;
+  list-style:none;
+  width:10em;
+  background:#000000;
+  padding:1em;
+  z-index: var(--i);
+  transition:0.5s;
+}
+ul li:hover
+{
+  background:#33cc8c; /*color de la parte frontal del recuadro*/
+  transform:translateX(40px); /*distancia de deslice del recuadro*/
+}
+ul li a
+{
+  text-decoration: none;
+  color:rgb(209, 209, 209); /*color de las letras frontal del recuadro (Estatico)*/
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+ul li:hover a
+{
+  color: rgb(255, 255, 255); /*color de las letras frontal del recuadro (En accion)*/
+}
+/*Fin, del menu*/
+section.menu 
+{
+  position:left;
+  margin-left:10em;
+}
+#design
+{
+  position:absolute;
+  background: #ffffff;
+  margin:0;
+  top:55px;
+  left:25px;
+  width: 200px;
+  height: 10px;
+  transform-origin:bottom;
+  transform: skewY(-10deg);
+}
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+/*MARGEN Y PADDING DE A,P,H1*/
+h1,
+p,
+a{
+  margin: 0px;
+  padding: 0;
+  font-family: 'Lato';
+}
+/*MARGEN Y PADDING DE A,P,H1*/
+
+/*DISEÑO DE H1*/
+h1 {
+  font-size: 2.5em;
+  left:1em;
+  font-weight: 800;
+}
+/*DISEÑO DE H1*/
+
+/*DISEÑO DE PARAGRAFO*/
+p {
+  font-size: 1.1em;
+  font-weight: 1000;
+  letter-spacing: 5px;
+}
+/*DISEÑO DE PARAGRAFO*/
+
+/*ENCABEZADO*/
+.header {
+  width: 100%;
+  padding:1em;
+  margin:0;
+  text-align: center;
+  background-image:linear-gradient(to right, #2fbd82,hsl(207, 60%, 50%)); /*#2fbd82*/
+  color: white;
+} 
+/*ENCABEZADO*/
+
+/*Hover*/
+.btn-bgstroke:hover {
+  background-color: white;
+  color: hsl(207, 60%, 50%);
+}
+/*Hover*/
+
+/*DISTANCIA DE SEPARACION, ICONOS*/
+.inline-block
+{
+  display:inline-block;
+  padding:1em;
+}
+/*DISTANCIA DE SEPARACION, ICONOS*/
+
+/*CONTENEDOR*/
+
+/*CONTENEDOR*/
+
+/*PIE DE PAGINA*/
+footer {
+  width: 100%;
+  padding:1em;
+  margin-top:5em;
+  position:top;
+  text-align: center;
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+/*PIE DE PAGINA*/
+
+.contenedor{
+  width:70%;
+  height:20em;
+  margin-left:15em;
+  margin-top:-5em;
+  padding:20em;
+  position:center;
+  background: #383b42;
+  text-align:center;
+  font-family:"Lato";
+  color: #ffffff;
+}
